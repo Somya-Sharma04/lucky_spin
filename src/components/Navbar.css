@@ -1,0 +1,19 @@
+.navbar-brand{
+    padding-left: 5%;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+  }
+
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  

@@ -1,0 +1,69 @@
+.image-container-2 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  transform-origin: center center;
+}
+
+.image-container-2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  transition: transform 2s ease-out;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.image-container-2.spin img {
+  transform: rotate(720deg);
+}
+
+.btn-spin {
+  margin-top: 30px;
+}
+
+.parent-container {
+  margin-top: 5%;
+}
+
+.custom-button-width-2 {
+  width: 300px;
+}
+
+@media (max-width: 512px) {
+  .image-container-2 {
+    width: 250px;
+    height: 250px;
+  }
+  .image-container-2 img {
+    width: 250px;
+    height: 250px;
+  }
+  .parent-container {
+    margin-top: 20%;
+  }
+  .custom-button-width-2 {
+    width: 200px;
+  }
+}
+
+.btn-spin button {
+  font-size: large;
+  font-weight: 500;
+}
+
+.btn-spin button:disabled {
+  cursor: not-allowed;
+}
+
+.btn-spin button.spinning {
+  background-color: #ccc;
+  color: #fff;
+  cursor: wait;
+}
